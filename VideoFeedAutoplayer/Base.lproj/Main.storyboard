@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LqW-0p-pV6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Vimeo Videos-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoFeedAutoplayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pco-HP-916">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="220" id="JyO-qx-bli" customClass="PRVideoTableCell" customModule="VideoFeedAutoplayer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JyO-qx-bli" id="C6u-vL-QQG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="219.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIL-Ll-AFX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="219.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2G1-hS-rYO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="600" height="219.5"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel LabelLabelLabelLabelLabelLabelLabelLabelLabelLabel Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyS-Gg-Jqh">
+                                                            <rect key="frame" x="0.0" y="179.5" width="600" height="40"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.204510195035461" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="yCi-5W-vAM"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="2G1-hS-rYO" secondAttribute="trailing" id="8bx-hI-onI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2G1-hS-rYO" secondAttribute="bottom" id="Jyf-hF-s5y"/>
+                                                        <constraint firstItem="2G1-hS-rYO" firstAttribute="top" secondItem="AIL-Ll-AFX" secondAttribute="top" id="QQC-hl-H8e"/>
+                                                        <constraint firstAttribute="bottom" secondItem="oyS-Gg-Jqh" secondAttribute="bottom" id="W1V-I1-gnU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oyS-Gg-Jqh" secondAttribute="trailing" id="dee-vq-nOb"/>
+                                                        <constraint firstItem="oyS-Gg-Jqh" firstAttribute="leading" secondItem="AIL-Ll-AFX" secondAttribute="leading" id="tco-NN-mFe"/>
+                                                        <constraint firstItem="2G1-hS-rYO" firstAttribute="leading" secondItem="AIL-Ll-AFX" secondAttribute="leading" id="vYP-l1-9Ym"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="AIL-Ll-AFX" secondAttribute="trailing" id="KOo-IM-yUY"/>
+                                                <constraint firstAttribute="bottom" secondItem="AIL-Ll-AFX" secondAttribute="bottom" id="YVE-Kg-aPg"/>
+                                                <constraint firstItem="AIL-Ll-AFX" firstAttribute="leading" secondItem="C6u-vL-QQG" secondAttribute="leading" id="cFg-5G-L5C"/>
+                                                <constraint firstItem="AIL-Ll-AFX" firstAttribute="top" secondItem="C6u-vL-QQG" secondAttribute="top" id="h0E-Jw-geV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="previewContainer" destination="AIL-Ll-AFX" id="1F6-Nz-VxF"/>
+                                            <outlet property="previewImageView" destination="2G1-hS-rYO" id="ibw-5o-h1S"/>
+                                            <outlet property="titleLabel" destination="oyS-Gg-Jqh" id="MPK-KI-PIO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nah-zD-D9T"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yP7-Om-jcy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pco-HP-916" secondAttribute="trailing" id="1RU-c7-sP1"/>
+                            <constraint firstItem="pco-HP-916" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BTE-O7-Vdp"/>
+                            <constraint firstItem="pco-HP-916" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dJb-Sq-qzA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pco-HP-916" secondAttribute="bottom" id="iKJ-G1-tlj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vimeo Videos" id="k4e-Ky-mLV"/>
+                    <connections>
+                        <outlet property="tableView" destination="pco-HP-916" id="c6T-WS-UkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aQ2-mK-abP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LqW-0p-pV6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jpb-wa-4Fm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NXV-P9-v9m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atq-eZ-5b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="348"/>
+        </scene>
+    </scenes>
+</document>
